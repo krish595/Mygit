@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="64552" started-at="2017-11-01T05:28:27Z" finished-at="2017-11-01T05:29:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="64552" started-at="2017-11-01T05:28:27Z" finished-at="2017-11-01T05:29:31Z">
+      <class name="testCases.CerifyCheckOutPage">
+        <test-method status="PASS" signature="checkO()[pri:0, instance:testCases.CerifyCheckOutPage@1d057a39]" name="checkO" is-config="true" duration-ms="43763" started-at="2017-11-01T10:58:27Z" finished-at="2017-11-01T10:59:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkO -->
+        <test-method status="FAIL" signature="testCheckoutPage()[pri:0, instance:testCases.CerifyCheckOutPage@1d057a39]" name="testCheckoutPage" duration-ms="15570" started-at="2017-11-01T10:59:11Z" finished-at="2017-11-01T10:59:26Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Element is not clickable at point (778.38330078125, 632.7999877929688). Other element would receive the click: <div id="cloud-zoom-big" class="cloud-zoom-big" style="position: absolute; left: 422px; top: -2px; width: 350px; height: 400px; background-image: url(&quot;http://foodcourt.myavactis.com/avactis-images/pizza5_2.jpg&quot;); z-index: 99; background-position: -59px -599px; opacity: 1;"></div>
+Command duration or timeout: 212 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'NEW', ip: '192.168.95.2', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: eb53d03a-c22f-416d-ae43-07a5d9ec235c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Element is not clickable at point (778.38330078125, 632.7999877929688). Other element would receive the click: <div id="cloud-zoom-big" class="cloud-zoom-big" style="position: absolute; left: 422px; top: -2px; width: 350px; height: 400px; background-image: url(&quot;http://foodcourt.myavactis.com/avactis-images/pizza5_2.jpg&quot;); z-index: 99; background-position: -59px -599px; opacity: 1;"></div>
+Command duration or timeout: 212 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'NEW', ip: '192.168.95.2', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: eb53d03a-c22f-416d-ae43-07a5d9ec235c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at pages.CheckOutPage.verifyCheckOut(CheckOutPage.java:29)
+	at testCases.CerifyCheckOutPage.testCheckoutPage(CerifyCheckOutPage.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckoutPage -->
+        <test-method status="PASS" signature="exitDriver(org.testng.ITestResult)[pri:0, instance:testCases.CerifyCheckOutPage@1d057a39]" name="exitDriver" is-config="true" duration-ms="5158" started-at="2017-11-01T10:59:26Z" finished-at="2017-11-01T10:59:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCheckoutPage status=FAILURE method=CerifyCheckOutPage.testCheckoutPage()[pri:0, instance:testCases.CerifyCheckOutPage@1d057a39] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exitDriver -->
+      </class> <!-- testCases.CerifyCheckOutPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
